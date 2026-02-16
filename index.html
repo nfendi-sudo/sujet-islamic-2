@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موضوع مقترح (العقيدة، العقل، الرسالات، المقاصد)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* كحلي */
+            --secondary-color: #f4f6f7; /* رمادي فاتح */
+            --accent-color: #e67e22; /* برتقالي */
+            --border-color: #2c3e50;
+            --font-main: 'Amiri', serif;
+            --font-head: 'Tajawal', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-head);
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .exam-paper {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 3px double var(--primary-color);
+            padding: 40px;
+            position: relative;
+        }
+
+        /* الترويسة */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: var(--font-main);
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin: 10px 0;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #555;
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* السند القرآني */
+        .quran-box {
+            background-color: #fffbf0;
+            border: 2px solid #d4ac0d;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .quran-text {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.4;
+            color: #000;
+        }
+
+        /* العناوين والأسئلة */
+        .part-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            display: inline-block;
+            border-radius: 5px;
+            font-family: var(--font-main);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .questions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .questions-list li {
+            margin-bottom: 20px;
+            padding-right: 20px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .questions-list li::before {
+            content: "▪";
+            position: absolute;
+            right: 0;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .sub-q {
+            display: block;
+            margin-right: 25px;
+            color: #555;
+            font-size: 1rem;
+            margin-top: 5px;
+            border-right: 2px solid #ddd;
+            padding-right: 10px;
+        }
+
+        /* الجدول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td { border: 1px solid #999; padding: 10px; text-align: center; }
+        th { background-color: #eee; }
+
+        /* زر الطباعة */
+        .btn-print {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-family: var(--font-head);
+        }
+
+        @media print {
+            .btn-print { display: none; }
+            body { padding: 0; }
+            .exam-paper { border: none; width: 100%; max-width: 100%; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="exam-paper">
+    <div class="header">
+        <h3>الجمهورية الجزائرية الديمقراطية الشعبية</h3>
+        <h1>اختبار في مادة العلوم الإسلامية</h1>
+        <div class="meta-info">
+            <span>المستوى: الثالثة ثانوي (جميع الشعب)</span>
+            <span>الموضوع: شامل (الفصل 1 + 2)</span>
+        </div>
+    </div>
+
+    <div class="part-title">الجزء الأول (12 نقطة)</div>
+    
+    <div class="quran-box">
+        <span class="quran-text">
+            ﴿وَإِذَا قِيلَ لَهُمُ اتَّبِعُوا مَا أَنزَلَ اللَّهُ قَالُوا بَلْ نَتَّبِعُ مَا أَلْفَيْنَا عَلَيْهِ آبَاءَنَا ۗ أَوَلَوْ كَانَ آبَاؤُهُمْ لَا يَعْقِلُونَ شَيْئًا وَلَا يَهْتَدُونَ﴾
+            <br>
+            <small>[سورة البقرة: 170]</small>
+        </div>
+    </div>
+
+    <ul class="questions-list">
+        <li>
+            ذمت الآية الكريمة موقف الكفار المعطلين لعقولهم بسبب "التقليد الأعمى".
+            <span class="sub-q">أ- أبرز أهمية العقل في القرآن الكريم (نقطتين).</span>
+            <span class="sub-q">ب- للعقل حدود لا يجب أن يتجاوزها، وضح ذلك.</span>
+        </li>
+        <li>
+            يشير قوله تعالى: ﴿مَا أَنزَلَ اللَّهُ﴾ إلى الرسالات السماوية التي جاءت لهداية البشر، لكن طال التحريف بعضها.
+            <span class="sub-q">أ- عرّف الرسالات السماوية اصطلاحاً.</span>
+            <span class="sub-q">ب- قارن بين "الإسلام" و"المسيحية" من حيث (نظرتهم للإله) و (نظرتهم للمسيح عليه السلام).</span>
+        </li>
+        <li>
+            تضمنت الآية إشارة إلى وسيلة من وسائل القرآن الكريم في تثبيت العقيدة الإسلامية.
+            <span class="sub-q">أ- استخرج هذه الوسيلة، ثم اشرحها باختصار.</span>
+            <span class="sub-q">ب- بيّن علاقة العقيدة الإسلامية بالصحة النفسية.</span>
+        </li>
+        <li>
+            استخرج من النص القرآني حكماً شرعياً وفائدة.
+        </li>
+    </ul>
+
+    <div class="part-title">الجزء الثاني (08 نقاط)</div>
+    
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; background: #fdfefe; padding: 15px; border-radius: 5px; border: 1px dashed #aaa;">
+        "أحمد تاجر مسلم، يسافر مسافات طويلة لتجارة المواد الغذائية، ولأجل التيسير:
+        <br>1. يقوم <strong>بقصر الصلاة</strong> الرباعية (يصلي الظهر ركعتين) أثناء سفره.
+        <br>2. يحرص دائماً على <strong>لبس أنظف الثياب والتطيب</strong> عند مقابلة الزبائن.
+        <br>3. يقوم <strong>بتوثيق ديونه</strong> (كتابة الدين) مع التجار لضمان الحقوق."
+    </p>
+
+    <ul class="questions-list">
+        <li>
+            صنّف الأفعال التي تحتها خط (قصر الصلاة - التطيب - توثيق الدين) ضمن أقسام مقاصد الشريعة الإسلامية المناسبة لها في الجدول التالي:
+            <table>
+                <thead>
+                    <tr>
+                        <th>الفعل</th>
+                        <th>القسم المقاصدي (ضروري/حاجي/تحسيني)</th>
+                        <th>التعليل (لماذا؟)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>قصر الصلاة</td>
+                        <td>...................................</td>
+                        <td>...................................</td>
+                    </tr>
+                    <tr>
+                        <td>التطيب والنظافة</td>
+                        <td>...................................</td>
+                        <td>...................................</td>
+                    </tr>
+                    <tr>
+                        <td>توثيق الدين</td>
+                        <td>...................................</td>
+                        <td>...................................</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li>
+            عرّف كلا من "الحاجيات" و "التحسينيات" اصطلاحاً.
+        </li>
+        <li>
+            رتب أقسام المقاصد (الضروريات، الحاجيات، التحسينيات) حسب الأهمية، مبيناً ماذا يحدث لو تعارض "حاجي" مع "ضروري".
+        </li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 40px; color: #777;">
+        بالتوفيق والنجاح
+    </div>
+</div>
+
+<button class="btn-print" onclick="window.print()">طباعة الموضوع</button>
+
+</body>
+</html>
